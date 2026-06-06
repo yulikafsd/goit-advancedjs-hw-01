@@ -1,0 +1,34 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 24px 0;
+  max-width: 1128px;
+
+  --indent-x: 24px;
+  --indent-y: 48px;
+  --items: 3;
+
+  gap: var(--indent-y) var(--indent-x);
+
+  & .gallery-item {
+    flex-basis: calc((100% - var(--indent-x) * (var(--items) - 1)) / var(--items));
+    transition: transform 250ms ease-in-out;
+    
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.04);
+    }
+    
+    & .gallery-image {
+      width: 360px;
+    }
+  };
+
+};
+
+.custom-lightbox {
+  --sl-overlay-background: #2e2f42 !important;
+}

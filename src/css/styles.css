@@ -4,6 +4,8 @@
   | default @import url()
   |============================
 */
+@import 'simplelightbox/dist/simple-lightbox.min.css';
+
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
@@ -12,3 +14,8 @@
 /* Sections style */
 @import url('./header.css');
 @import url('./back-link.css');
+@import url('./gallery.css');
+
+.custom-lightbox {
+  background-color: rgb(46 47 66 / 0.8);
+}
